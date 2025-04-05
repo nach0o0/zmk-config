@@ -56,19 +56,6 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
         >;
     };
 
-    /*
-        kscan0: kscan {
-        compatible = "zmk,kscan-gpio-direct";
-
-        input-gpios
-            = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            ;
-    };
-    */
-
     mock_kscan: kscan_0 {
         compatible = "zmk,kscan-mock";
         // wakeup-source;
