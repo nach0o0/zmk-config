@@ -1,10 +1,16 @@
+#define DT_DRV_COMPAT zmk_behavior_os_layer
+
 #include <zephyr/device.h>
+#include <drivers/behavior.h>
+#include <zephyr/logging/log.h>
 #include <zephyr/kernel.h>
 #include <zmk/behavior.h>
 #include <zmk/keymap.h>
 #include <zmk/layers.h>
 #include <zmk/keycode.h>
 #include <hid.h>
+
+#if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
 
 struct behavior_os_layer_config {};
 
@@ -57,4 +63,10 @@ static const struct behavior_driver_api behavior_os_layer_driver_api = {
     .binding_released = behavior_os_layer_keymap_binding_released,
 };
 
-BEHAVIOR_DEFINE(os_layer_behavior, behavior_os_layer_driver_api);
+BEHAVIOR_DT_INST_DEFINE(0,
+    NULL, NULL,
+    NULL, NULL,
+    POST_KERNEL, CONFIG_KERNEL_INIT_PRIORITY_DEFAULT,
+    &behavior_os_layer_driver_api);
+
+#endif
