@@ -25,9 +25,6 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
-    - name: zmk-nice-view-hid
-      remote: zzeneg
-      revision: main
     - name: zmk-raw-hid
       remote: zzeneg
       revision: main
