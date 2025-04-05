@@ -26,7 +26,6 @@
         os_layer_behavior: os_layer_behavior {
             compatible = "zmk,behavior-os-layer";
             #binding-cells = <4>;
-            label = "OS Layer Toggle";
         };
     };
 

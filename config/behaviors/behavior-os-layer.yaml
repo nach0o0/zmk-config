@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT
+
+description: Custom behavior to switch layers based on OS.
+
+compatible: "zmk,behavior-os-layer"
+
+properties:
+  "#binding-cells":
+    type: int
+    required: true
+    const: 4
+    description: >
+      Three parameters representing the layer to activate:
+      - param1: for Linux
+      - param2: for Windows
+      - param3: for Android
+      - param4: for fallback/others
