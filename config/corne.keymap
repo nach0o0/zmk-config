@@ -25,7 +25,10 @@
     behaviors {
         os_win_l1: os_layer_behavior {
             compatible = "zmk,behavior-os-layer";
+<<<<<<< HEAD
             label = "OS_Win_L1";
+=======
+>>>>>>> 9917adac1df9802b04587bafd9ecd3f6dbc77377
             linux-layer = 2;
             windows-layer = 1;
             macos-layer = 2;
@@ -35,7 +38,10 @@
         };
         os_win_l2: os_layer_behavior {
             compatible = "zmk,behavior-os-layer";
+<<<<<<< HEAD
             label = "OS_Win_L2";
+=======
+>>>>>>> 9917adac1df9802b04587bafd9ecd3f6dbc77377
             linux-layer = 1;
             windows-layer = 2;
             macos-layer = 1;
