@@ -1,5 +1,7 @@
+zephyr_library()
+zephyr_library_sources(${ZEPHYR_BASE}/misc/empty_file.c)
 zephyr_library_sources(src/hid.c)
-target_sources(app PRIVATE src/behaviors/behavior_os_layer.c)
+zephyr_library_sources(src/behaviors/behavior_os_layer.c)
 zephyr_include_directories(include)
 zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
 
