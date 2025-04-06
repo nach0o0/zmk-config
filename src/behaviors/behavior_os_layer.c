@@ -57,9 +57,19 @@ static const struct behavior_driver_api behavior_os_layer_driver_api = {
     .binding_released = behavior_os_layer_keymap_binding_released,
 };
 
-BEHAVIOR_DT_INST_DEFINE(0,
+
+#define OSL_INST(n)
+    static const struct behavior_os_layer_config behavior_os_layer_config_##n = {
+        .linux_layer = DT_INST_PROP(n, linux_layer),
+        .windows_layer = DT_INST_PROP(n, windows_layer),
+        .macos_layer = DT_INST_PROP(n, macos_layer),
+        .android_layer = DT_INST_PROP(n, android_layer),
+        .ios_layer = DT_INST_PROP(n, ios_layer),
+        .default_layer = DT_INST_PROP(n, default_layer),
+    };
+    BEHAVIOR_DT_INST_DEFINE(n,
     NULL, NULL,
-    NULL, &behavior_os_layer_config,
+    NULL, &behavior_os_layer_config_##n,
     POST_KERNEL, CONFIG_KERNEL_INIT_PRIORITY_DEFAULT,
     &behavior_os_layer_driver_api);
 
