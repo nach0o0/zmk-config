@@ -25,6 +25,7 @@
     behaviors {
         os_win_l1: os_layer_behavior {
             compatible = "zmk,behavior-os-layer";
+            label = "OS_Win_L1";
             linux-layer = 2;
             windows-layer = 1;
             macos-layer = 2;
@@ -34,6 +35,7 @@
         };
         os_win_l2: os_layer_behavior {
             compatible = "zmk,behavior-os-layer";
+            label = "OS_Win_L2";
             linux-layer = 1;
             windows-layer = 2;
             macos-layer = 1;
