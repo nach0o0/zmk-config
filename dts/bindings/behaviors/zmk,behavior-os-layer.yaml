@@ -1,24 +1,27 @@
-# Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
 description: Custom behavior to switch layers based on OS.
 
 compatible: "zmk,behavior-os-layer"
 
-include: behavior-metadata.yaml
+include: zero_param.yaml
 
 properties:
-  label:
-    type: string
-    required: false
-    deprecated: true
-  "#binding-cells":
+  linux-layer:
     type: int
-    required: true
-    const: 4
-
-binding-cells:
-  - param1
-  - param2
-  - param3
-  - param4
+    required: false
+  windows-layer:
+    type: int
+    required: false
+  macos-layer:
+    type: int
+    required: false
+  android-layer:
+    type: int
+    required: false
+  ios-layer:
+    type: int
+    required: false
+  default-layer:
+    type: int
+    required: false

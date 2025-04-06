@@ -23,9 +23,23 @@
 
 / {
     behaviors {
-        os_layer_behavior: os_layer_behavior {
+        os_win_l1: os_layer_behavior {
             compatible = "zmk,behavior-os-layer";
-            #binding-cells = <4>;
+            linux-layer = 2;
+            windows-layer = 1;
+            macos-layer = 2;
+            android-layer = 2;
+            ios-layer = 2;
+            default-layer = 2;
+        };
+        os_win_l2: os_layer_behavior {
+            compatible = "zmk,behavior-os-layer";
+            linux-layer = 1;
+            windows-layer = 2;
+            macos-layer = 1;
+            android-layer = 1;
+            ios-layer = 1;
+            default-layer = 1;
         };
     };
 
@@ -43,7 +57,7 @@
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LSHFT &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
                 &kp LCTRL &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                             &kp LGUI  &os_layer_behavior 2 1 2 2  &kp SPACE     &kp RET  &os_layer_behavior 1 2 1 1  &kp RALT
+                             &kp LGUI  &os_win_l1  &kp SPACE     &kp RET  &os_win_l2  &kp RALT
             >;
         };
 
