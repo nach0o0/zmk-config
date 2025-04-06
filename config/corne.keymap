@@ -23,7 +23,7 @@
 
 / {
     behaviors {
-        os_win_l1: os_layer_behavior {
+        os_win_l1: to_os_winl1_layer_behavior {
             compatible = "zmk,behavior-os-layer";
             label = "OS_Win_L1";
             linux-layer = <2>;
@@ -33,7 +33,7 @@
             ios-layer = <2>;
             default-layer = <2>;
         };
-        os_win_l2: os_layer_behavior {
+        os_win_l2: to_os_winl2_layer_behavior {
             compatible = "zmk,behavior-os-layer";
             label = "OS_Win_L2";
             linux-layer = <1>;
