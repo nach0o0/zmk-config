@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: zzeneg
       url-base: https://github.com/zzeneg
+    - name: nach0o0
+      url-base: https://github.com/nach0o0
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -30,6 +32,9 @@ manifest:
       revision: main
     - name: zmk-raw-hid
       remote: zzeneg
+      revision: main
+    - name: zmk-behavior-os-layer
+      remote: nach0o0
       revision: main
   self:
     path: config
