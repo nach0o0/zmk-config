@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+/*
+#include <dt-bindings/zmk/behaviors.h>
+
+/ {
+    behaviors {
+#if ZMK_BEHAVIOR_OMIT(OS_LAYER)
+        /omit-if-no-ref/
+#endif
+        os_layer: to_os_layer {
+            compatible = "zmk,behavior-os-layer";
+            #binding-cells = 0;
+            linux-layer = 2;
+            windows-layer = 1;
+            macos-layer = 2;
+            android-layer = 2;
+            ios-layer = 2;
+            default-layer = 2;
+            display-name = "To Os Layer";
+        };
+    };
+};*/
