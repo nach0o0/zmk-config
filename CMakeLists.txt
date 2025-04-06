@@ -1,9 +1,9 @@
 zephyr_library_sources(src/hid.c)
-zephyr_library_sources(src/behaviors/behavior_os_layer.c)
+target_sources(app PRIVATE src/behaviors/behavior_os_layer.c)
 zephyr_include_directories(include)
 zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
 
-set(DTC_EXTRA_BINDING_DIRECTORIES
-    ${CMAKE_CURRENT_SOURCE_DIR}/dts/bindings/behaviors
-    ${ZMK_CONFIG}/bindings
-)
+#set(DTC_EXTRA_BINDING_DIRECTORIES
+#    ${CMAKE_CURRENT_SOURCE_DIR}/dts/bindings/behaviors
+#    ${ZMK_CONFIG}/bindings
+#)
