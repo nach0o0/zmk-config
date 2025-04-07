@@ -35,6 +35,6 @@ manifest:
       revision: main
     - name: zmk-behavior-os-layer
       remote: nach0o0
-      revision: main
+      revision: constant-current_host_os
   self:
     path: config
