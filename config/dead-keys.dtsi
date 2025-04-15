@@ -1,6 +1,5 @@
 / {
-    behaviors {
-        macros {
+    macros {
         kp_dead: kp_dead {
             compatible = "zmk,behavior-macro";
             #binding-cells = <1>;
@@ -9,6 +8,5 @@
                 , <&macro_tap &kp SPACE>
                 ;
         };
-    };
     };
 };
