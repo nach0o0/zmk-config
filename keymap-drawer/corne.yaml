@@ -1,7 +1,48 @@
 layout: {zmk_keyboard: corne}
 layers:
-  L0: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LSHFT, A, S, D, F, G, H, J, K, L, ;, RSHFT, LCTRL, Z, X, C, V, B, N, M, ',', ., /, RCTRL, LGUI, L1, SPACE, RET, L2,
-    RALT]
+  L0:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - LSHFT
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LSHFT}
+  - {t: F, h: LCTRL}
+  - G
+  - H
+  - {t: J, h: RCTRL}
+  - {t: K, h: RSHFT}
+  - {t: L, h: RALT}
+  - {t: ;, h: RGUI}
+  - RSHFT
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RCTRL
+  - LGUI
+  - L1
+  - SPACE
+  - RET
+  - L2
+  - RALT
   L1:
   - TAB
   - '&'
